@@ -18,22 +18,6 @@
 		} );
 	} );
 
-	/****************************************/
-	/********** Big title section ***********/
-	/****************************************/
-	wp.customize( 'shop_isle_big_title_hide', function( value ) {
-		value.bind( function( to ) {
-
-			if( to != '1' ) {
-				$( '.home-section' ).removeClass( 'shop_isle_hidden_if_not_customizer' );
-			}
-			else {
-				$( '.home-section' ).addClass( 'shop_isle_hidden_if_not_customizer' );
-			}
-			
-		} );
-	} );
-
 	/******************************/
 	/**********  Colors ***********/
 	/******************************/
@@ -81,31 +65,25 @@
 
 		} );
 	} );
-
-	wp.customize( 'shop_isle_blog_header_title', function( value ) {
-		value.bind( function( to ) {
-			if( to != '' ) {
-				$( '.shop-isle-blog-header-title' ).removeClass( 'shop_isle_hidden_if_not_customizer' );
-			}
-			else {
-				$( '.shop-isle-blog-header-title' ).addClass( 'shop_isle_hidden_if_not_customizer' );
-			}
-			$( '.shop-isle-blog-header-title' ).html( to );
-		} );
-	} );
-
-	wp.customize( 'shop_isle_blog_header_subtitle', function( value ) {
-		value.bind( function( to ) {
-			if( to != '' ) {
-				$( '.shop-isle-blog-header-subtitle' ).removeClass( 'shop_isle_hidden_if_not_customizer' );
-			}
-			else {
-				$( '.shop-isle-blog-header-subtitle' ).addClass( 'shop_isle_hidden_if_not_customizer' );
-			}
-			$( '.shop-isle-blog-header-subtitle' ).html( to );
-		} );
-	} );
 	
+	/*******************************/
+	/******    Slider section ******/
+	/*******************************/
+	wp.customize( 'shop_isle_slider_hide', function( value ) {
+		value.bind( function( to ) {
+			if( to != '1' ) {
+				$( 'section.home-section' ).removeClass( 'shop_isle_hidden_if_not_customizer' );
+				$( '.navbar-custom' ).removeClass( 'navbar-color-customizer' );
+				$('.main').css('margin-top', 0 );
+			}
+			else {
+				$( 'section.home-section' ).addClass( 'shop_isle_hidden_if_not_customizer' );
+				$( '.navbar-custom' ).addClass( 'navbar-color-customizer' );
+				$('.main').css('margin-top', $('.navbar-custom').outerHeight() );
+			}
+		} );
+	} );
+
 
 	/********************************/
     /*********	Banners section *****/
@@ -120,18 +98,19 @@
 			}
 		} );
 	} );
-
+	
 	// Add new banner (Repeater)
 	wp.customize( "shop_isle_banners", function( value ) {
 		value.bind( function( to ) {
 			var obj = JSON.parse( to );
 			var result ="";
 			obj.forEach(function(item) {
-			result += '<div class="col-sm-4"><div class="content-box mt-0 mb-0"><div class="content-box-image"><a href="' + item.link + '"><img src="' + item.image_url + '"></a></div></div></div>';
+				result += '<div class="col-sm-4"><div class="content-box mt-0 mb-0"><div class="content-box-image"><a href="' + item.link + '"><img src="' + item.image_url + '"></a></div></div></div>';
 			});
 			$( '.shop_isle_bannerss_section' ).html( result );
 		} );
 	} );
+
 
 	/*********************************/
     /*******  Products section *******/
@@ -285,7 +264,31 @@
 			$( '.our_advantages' ).text( to );
 		} );
 	} );
- 
+
+	/* Team members (Repeater) */
+	wp.customize( "shop_isle_team_members", function( value ) {
+		value.bind( function( to ) {
+			var obj = JSON.parse( to );
+			var result ="";
+			obj.forEach(function(item) {
+				result += '<div class="col-sm-6 col-md-3 mb-sm-20 fadeInUp"><div class="team-item"><div class="team-image"><img src="' + item.image_url + '" alt="' + item.text + '"><div class="team-detail"><p class="font-serif">' + item.description + '</p></div><!-- .team-detail --></div><!-- .team-image --><div class="team-descr font-alt"><div class="team-name">' + item.text + '</div><div class="team-role">' + item.subtext + '</div></div><!-- .team-descr --></div><!-- .team-item --></div>';
+			});
+			$( '.about-team-member .slides' ).html( result );
+		} );
+	} );
+
+	/* Advantages (Repeater) */
+	wp.customize( "shop_isle_advantages", function( value ) {
+		value.bind( function( to ) {
+			var obj = JSON.parse( to );
+			var result ="";
+			obj.forEach(function(item) {
+				result += '<div class="col-sm-6 col-md-3 col-lg-3"><div class="features-item"><div class="features-icon"><span class="' + item.icon_value + '"></span></div><h3 class="features-title font-alt">' + item.text + '</h3>' + item.subtext + '</div></div>';
+			});
+			$( '.module-advantages .multi-columns-row' ).html( result );
+		} );
+	} );
+
 	/*********************************/
 	/**********  404 page  ***********/
 	/*********************************/

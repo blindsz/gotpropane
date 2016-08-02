@@ -82,8 +82,10 @@ add_action( 'shop_isle_page_after', 	'shop_isle_display_comments',	10 );
 /**
  * Extras
  * @see  shop_isle_body_classes()
+ * @see  shop_isle_page_menu_args()
  */
 add_filter( 'body_class',			'shop_isle_body_classes' );
+add_filter( 'wp_page_menu_args',	'shop_isle_page_menu_args' );
 
 /**
  * Customize
@@ -102,6 +104,39 @@ add_filter( 'body_class',			'shop_isle_body_classes' );
  */
 add_action( 'shop_isle_before_shop', 		'woocommerce_breadcrumb',	             	10 );
 add_action( 'shop_isle_before_shop', 		'woocommerce_catalog_ordering',				20 );
+
+
+/**
+ * Define image sizes
+ */
+function shop_isle_woocommerce_image_dimensions() {
+	global $pagenow;
+ 
+	if ( ! isset( $_GET['activated'] ) || $pagenow != 'themes.php' ) {
+		return;
+	}
+  	$catalog = array(
+		'width' 	=> '262',	// px
+		'height'	=> '325',	// px
+		'crop'		=> 1 		// true
+	);
+	$single = array(
+		'width' 	=> '555',	// px
+		'height'	=> '688',	// px
+		'crop'		=> 1 		// true
+	);
+	$thumbnail = array(
+		'width' 	=> '83',	// px
+		'height'	=> '103',	// px
+		'crop'		=> 1 		// false
+	);
+	// Image sizes
+	update_option( 'shop_catalog_image_size', $catalog ); 		// Product category thumbs
+	update_option( 'shop_single_image_size', $single ); 		// Single product image
+	update_option( 'shop_thumbnail_image_size', $thumbnail ); 	// Image gallery thumbs
+}
+add_action( 'after_switch_theme', 'shop_isle_woocommerce_image_dimensions', 1 );
+
  
 /*
  * Number of thumbnails per row in product galleries

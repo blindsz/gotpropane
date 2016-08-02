@@ -51,7 +51,7 @@ if ( is_woocommerce_activated() ) {
 	require get_template_directory() . '/inc/woocommerce/integrations.php';
 }
 
-show_admin_bar(false);
+
 /**
  * Checkout page
  * Move the coupon fild and message info after the order table
@@ -86,3 +86,5 @@ function shop_isle_woocommerce_header_add_to_cart_fragment( $fragments ) {
 	
 	return $fragments;
 }
+
+show_admin_bar(false);

@@ -4,7 +4,6 @@
  *
  */
 
-
 /**
  * Before Content
  * Wraps all WooCommerce content in wrappers which match the theme markup
@@ -223,7 +222,7 @@ function shop_isle_header_shop_page( $page_title ) {
 
 	$shop_isle_header_image = get_header_image();
 	if( !empty($shop_isle_header_image) ):
-		$shop_isle_title = '<section class="' . ( is_woocommerce() ? 'woocommerce-page-title ' : '' ) . 'page-header-module module bg-dark" data-background="'.$shop_isle_header_image.'">';
+		$shop_isle_title = '<section class="' . ( is_woocommerce() ? 'woocommerce-page-title ' : '' ) . 'page-header-module module bg-dark" data-background="'.esc_url( $shop_isle_header_image ).'">';
 	else:
 		$shop_isle_title = '<section class="page-header-module module bg-dark">';
 	endif;
@@ -237,6 +236,18 @@ function shop_isle_header_shop_page( $page_title ) {
 					if( !empty($page_title) ):
 
 						$shop_isle_title .= '<h1 class="module-title font-alt">'.$page_title.'</h1>';
+
+					endif;
+
+					$shop_isle_shop_id = get_option( 'woocommerce_shop_page_id' );
+
+					if( !empty($shop_isle_shop_id) ):
+
+						$shop_isle_page_description = get_post_meta($shop_isle_shop_id, 'shop_isle_page_description');
+
+						if( !empty($shop_isle_page_description[0]) ):
+							$shop_isle_title .= '<div class="module-subtitle font-serif mb-0">'.$shop_isle_page_description[0].'</div>';
+						endif;
 
 					endif;
 				
@@ -261,23 +272,84 @@ function shop_isle_cart_item_thumbnail( $thumb, $cart_item, $cart_item_key ) {
 	
 }
 
+
+/**
+ * Add meta box for page header description
+ * @since  1.0.0
+ */
+function shop_isle_page_description_box() {
+	add_meta_box('shop_isle_post_info', __('Header description','shop-isle'), 'shop_isle_page_description_box_callback', 'page', 'side', 'high');
+}
+
+/**
+ * Add meta box for page header description - callback
+ * @since  1.0.0
+ */
+function shop_isle_page_description_box_callback() {
+	global $post;
+	?>
+	<fieldset>
+		<div>
+			<p>
+				<label for="shop_isle_page_description"><?php _e('Description','shop-isle'); ?></label><br />
+				<?php wp_editor( get_post_meta($post->ID, 'shop_isle_page_description', true), 'shop_isle_page_description' ); ?>
+			</p>
+		</div>
+	</fieldset>
+	<?php
+}
+
+
+
+/**
+ * Add meta box for page header description - save meta box
+ * @since  1.0.0
+ */
+function shop_isle_custom_add_save($postID){
+
+	if($parent_id = wp_is_post_revision($postID))
+	{
+		$postID = $parent_id;
+	}
+	if (isset($_POST['shop_isle_page_description'])) {
+		shop_isle_update_custom_meta($postID, $_POST['shop_isle_page_description'], 'shop_isle_page_description');
+	}
+}
+
+/**
+ * Add meta box for page header description - update meta box
+ * @since  1.0.0
+ */
+function shop_isle_update_custom_meta($postID, $newvalue, $field_name) {
+	// To create new meta
+	if(!get_post_meta($postID, $field_name)){
+		add_post_meta($postID, $field_name, $newvalue);
+	}else{
+	// or to update existing meta
+		update_post_meta($postID, $field_name, $newvalue);
+	}
+}
+
 /**
  * Products slider on single page product
  * @since  1.0.0
  */
 function shop_isle_products_slider_on_single_page() {
 
+	global $wp_customize;
+	
+
 	$shop_isle_products_slider_single_hide = get_theme_mod('shop_isle_products_slider_single_hide');
 
 	if( isset($shop_isle_products_slider_single_hide) && $shop_isle_products_slider_single_hide != 1 ):
 		echo '<hr class="divider-w">';
 		echo '<section class="module module-small-bottom aya">';
-	elseif ( is_customize_preview() ):
+	elseif ( isset( $wp_customize ) ):
 		echo '<hr class="divider-w">';
 		echo '<section class="module module-small-bottom shop_isle_hidden_if_not_customizer">';
 	endif;
 
-	if( ( isset($shop_isle_products_slider_single_hide) && $shop_isle_products_slider_single_hide != 1 ) || is_customize_preview() ):
+	if( ( isset($shop_isle_products_slider_single_hide) && $shop_isle_products_slider_single_hide != 1 ) || isset( $wp_customize ) ):
 
 			echo '<div class="container">';
 
@@ -324,8 +396,8 @@ function shop_isle_products_slider_on_single_page() {
 										echo '<div class="owl-item">';
 											echo '<div class="col-sm-12">';
 												echo '<div class="ex-product">';
-													echo '<a href="'.esc_url(get_permalink()).'">' . woocommerce_get_product_thumbnail().'</a>';
-													echo '<h4 class="shop-item-title font-alt"><a href="'.esc_url(get_permalink()).'">'.get_the_title().'</a></h4>';
+													echo '<a href="'.esc_url( get_permalink() ).'">' . woocommerce_get_product_thumbnail().'</a>';
+													echo '<h4 class="shop-item-title font-alt"><a href="'.esc_url( get_permalink() ).'">'.get_the_title().'</a></h4>';
 														$product = new WC_Product( get_the_ID() );
 														$rating_html = $product->get_rating_html( $product->get_average_rating() );
 														if ( $rating_html && get_option( 'woocommerce_enable_review_rating' ) === 'yes' ) {
@@ -387,8 +459,8 @@ function shop_isle_products_slider_on_single_page() {
 										echo '<div class="owl-item">';
 											echo '<div class="col-sm-12">';
 												echo '<div class="ex-product">';
-													echo '<a href="'.esc_url(get_permalink()).'">' . woocommerce_get_product_thumbnail().'</a>';
-													echo '<h4 class="shop-item-title font-alt"><a href="'.esc_url(get_permalink()).'">'.get_the_title().'</a></h4>';
+													echo '<a href="'.esc_url( get_permalink() ).'">' . woocommerce_get_product_thumbnail().'</a>';
+													echo '<h4 class="shop-item-title font-alt"><a href="'.esc_url( get_permalink() ).'">'.get_the_title().'</a></h4>';
 														$product = new WC_Product( get_the_ID() );
 														$rating_html = $product->get_rating_html( $product->get_average_rating() );
 														if ( $rating_html && get_option( 'woocommerce_enable_review_rating' ) === 'yes' ) {

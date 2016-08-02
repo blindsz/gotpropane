@@ -1,343 +1,44 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Shop Isle\n"
+"Project-Id-Version: ShopIsle\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-28 14:31+0200\n"
-"PO-Revision-Date: 2016-07-28 14:31+0200\n"
+"POT-Creation-Date: 2016-01-12 15:19+0200\n"
+"PO-Revision-Date: 2016-01-12 15:20+0200\n"
 "Last-Translator: \n"
-"Language-Team: ThemeIsle <friends@themeisle.com>\n"
+"Language-Team: Themeisle <friends@themeisle.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__;esc_html__;esc_html_e\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;esc_html__\n"
 "X-Poedit-Basepath: ../\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: inc\n"
 "X-Poedit-SearchPath-2: assets\n"
 
-#: 404.php:26
+#: 404.php:24
 msgid "Error 404"
 msgstr ""
 
-#: 404.php:34
-msgid "The requested URL was not found on this server.<br> That is all we know."
-msgstr ""
-
-#: 404.php:43
+#: 404.php:41
 msgid "Back to home page"
 msgstr ""
 
 #: archive.php:94
-#: home.php:112
-#: index.php:99
+#: home.php:111
+#: index.php:123
 msgid "Read more"
 msgstr ""
 
 #: archive.php:106
-#: home.php:124
-#: index.php:111
+#: home.php:123
+#: index.php:135
 msgid "<span class=\"meta-nav\">&laquo;</span> Older posts"
 msgstr ""
 
 #: archive.php:107
-#: home.php:125
-#: index.php:112
+#: home.php:124
+#: index.php:136
 msgid "Newer posts <span class=\"meta-nav\">&raquo;</span>"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:334
-msgid "Install Required Plugins"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:335
-msgid "Install Plugins"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:337
-#, php-format
-msgid "Installing Plugin: %s"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:339
-#, php-format
-msgid "Updating Plugin: %s"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:340
-msgid "Something went wrong with the plugin API."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:392
-msgid "Return to Required Plugins Installer"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:393
-#: class-tgm-plugin-activation.php:920
-#: class-tgm-plugin-activation.php:2626
-#: class-tgm-plugin-activation.php:3673
-msgid "Return to the Dashboard"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:394
-#: class-tgm-plugin-activation.php:3252
-msgid "Plugin activated successfully."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:395
-msgid "The following plugin was activated successfully:"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:397
-#, php-format
-msgid "No action taken. Plugin %1$s was already active."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:399
-#, php-format
-msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:401
-#, php-format
-msgid "All plugins installed and activated successfully. %1$s"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:402
-msgid "Dismiss this notice"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:403
-msgid "There are one or more required or recommended plugins to install, update or activate."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:404
-msgid "Please contact the administrator of this site for help."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:608
-msgid "Update Required"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:725
-msgid "Set the parent_slug config variable instead."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:1027
-msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:1027
-#: class-tgm-plugin-activation.php:1030
-msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:1030
-msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2075
-#, php-format
-msgid "TGMPA v%s"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2366
-msgid "Required"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2369
-msgid "Recommended"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2385
-msgid "WordPress Repository"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2388
-msgid "External Source"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2391
-msgid "Pre-Packaged"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2408
-msgid "Not Installed"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2412
-msgid "Installed But Not Activated"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2414
-msgid "Active"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2420
-msgid "Required Update not Available"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2423
-msgid "Requires Update"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2426
-msgid "Update recommended"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2583
-msgid "Installed version:"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2591
-msgid "Minimum required version:"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2603
-msgid "Available version:"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2626
-msgid "No plugins to install, update or activate."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2640
-msgid "Plugin"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2641
-msgid "Source"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2642
-msgid "Type"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2646
-msgid "Version"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2647
-msgid "Status"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2696
-#, php-format
-msgid "Install %2$s"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2701
-#, php-format
-msgid "Update %2$s"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2707
-#, php-format
-msgid "Activate %2$s"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2777
-msgid "Upgrade message from the plugin author:"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2810
-msgid "Install"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2816
-msgid "Update"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2819
-msgid "Activate"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2850
-msgid "No plugins were selected to be installed. No action taken."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2852
-msgid "No plugins were selected to be updated. No action taken."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2893
-msgid "No plugins are available to be installed at this time."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:2895
-msgid "No plugins are available to be updated at this time."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:3001
-msgid "No plugins were selected to be activated. No action taken."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:3027
-msgid "No plugins are available to be activated at this time."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:3251
-msgid "Plugin activation failed."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:3591
-#, php-format
-msgid "Updating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:3594
-#, php-format
-msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:3596
-#, php-format
-msgid "The installation of %1$s failed."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:3600
-msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:3602
-#, php-format
-msgid "%1$s installed and activated successfully."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:3602
-#: class-tgm-plugin-activation.php:3610
-msgid "Show Details"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:3602
-#: class-tgm-plugin-activation.php:3610
-msgid "Hide Details"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:3603
-msgid "All installations and activations have been completed."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:3605
-#, php-format
-msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#: class-tgm-plugin-activation.php:3608
-msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:3610
-#, php-format
-msgid "%1$s installed successfully."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:3611
-msgid "All installations have been completed."
-msgstr ""
-
-#: class-tgm-plugin-activation.php:3613
-#, php-format
-msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
 #: comments.php:33
@@ -376,12 +77,55 @@ msgstr ""
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
-#: header.php:33
-msgid "Loading..."
+#: front-page.php:20
+msgid "ShopIsle"
 msgstr ""
 
-#: home.php:28
-msgid "Blog"
+#: front-page.php:20
+msgid "WooCommerce Theme"
+msgstr ""
+
+#: front-page.php:20
+msgid "FIND OUT MORE"
+msgstr ""
+
+#: front-page.php:20
+msgid "Hight quality store"
+msgstr ""
+
+#: front-page.php:20
+msgid "Responsive Theme"
+msgstr ""
+
+#: front-page.php:148
+msgid "Latest products"
+msgstr ""
+
+#: front-page.php:208
+#: front-page.php:296
+msgid "Add To Cart"
+msgstr ""
+
+#: front-page.php:246
+#: front-page.php:334
+msgid "See all products"
+msgstr ""
+
+#: front-page.php:255
+#: front-page.php:343
+msgid "No products found."
+msgstr ""
+
+#: front-page.php:417
+msgid "Exclusive products"
+msgstr ""
+
+#: front-page.php:418
+msgid "Special category of products"
+msgstr ""
+
+#: header.php:35
+msgid "Loading..."
 msgstr ""
 
 #: search.php:24
@@ -389,349 +133,346 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: template-frontpage.php:27
-#: inc/customizer/customizer.php:176
-msgid "WooCommerce Theme"
+#: template-about.php:100
+#: inc/customizer/customizer.php:463
+msgid "Meet our team"
 msgstr ""
 
-#: template-frontpage.php:28
-#: inc/customizer/customizer.php:188
-msgid "Find out more"
+#: template-about.php:101
+#: inc/customizer/customizer.php:477
+msgid "An awesome way to introduce the members of your team."
 msgstr ""
 
-#: template-frontpage.php:29
-#: inc/customizer/customizer.php:200
-msgid "#"
+#: template-about.php:206
+#: inc/customizer/customizer.php:531
+msgid "Presentation"
 msgstr ""
 
-#: template-frontpage.php:194
-#: inc/customizer/customizer.php:292
-msgid "Latest products"
+#: template-about.php:207
+#: inc/customizer/customizer.php:545
+msgid "What the video about our new products"
 msgstr ""
 
-#: template-frontpage.php:260
-#: template-frontpage.php:362
-msgid "Quick View"
+#: template-about.php:235
+#: inc/customizer/customizer.php:586
+#: inc/customizer/customizer.php:603
+msgid "Our advantages"
 msgstr ""
 
-#: template-frontpage.php:307
-#: template-frontpage.php:409
-msgid "See all products"
+#: template-about.php:244
+#: inc/customizer/customizer.php:617
+msgid "Ideas and concepts"
 msgstr ""
 
-#: template-frontpage.php:316
-msgid "No products found."
+#: template-about.php:244
+#: inc/customizer/customizer.php:617
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 msgstr ""
 
-#: template-frontpage.php:419
-msgid "For this section to work, you first need to install the WooCommerce plugin , create some products, and insert a WooCommerce shortocode or select a product category in Customize -> Frontpage sections -> Products section"
+#: template-about.php:244
+#: inc/customizer/customizer.php:617
+msgid "Designs & interfaces"
 msgstr ""
 
-#: template-frontpage.php:496
-#: inc/customizer/customizer.php:437
-msgid "Exclusive products"
+#: template-about.php:244
+#: inc/customizer/customizer.php:617
+msgid "Highly customizable"
 msgstr ""
 
-#: template-frontpage.php:497
-msgid "For this section to work, you first need to install the WooCommerce plugin , create some products, and select a product category in Customize -> Frontpage sections -> Products slider section"
+#: template-about.php:244
+#: inc/customizer/customizer.php:617
+msgid "Easy to use"
 msgstr ""
 
-#: inc/init.php:6
+#: inc/init.php:9
 msgid "Shop isle Small Banner Homepage"
 msgstr ""
 
-#: inc/customizer/customizer.php:18
-msgid "To customize the Contact Page you need to first select the template \"Contact page\" for the page you want to use for this purpose. Then open that page in the browser and press \"Customize\" in the top bar."
-msgstr ""
-
-#: inc/customizer/customizer.php:18
-msgid "Need further assistance? Check out this"
-msgstr ""
-
-#: inc/customizer/customizer.php:18
-#: inc/customizer/customizer.php:33
-msgid "doc"
-msgstr ""
-
-#: inc/customizer/customizer.php:25
-#, php-format
-msgid "To customize the Frontpage sections please create a page and select the template \"Frontpage\" for that page. After that, go to %1$s and under \"Front page displays\" select \"A static page\". Finally, for \"Front page\" choose the page you previously created."
-msgstr ""
-
-#: inc/customizer/customizer.php:26
-#: inc/customizer/customizer.php:673
-msgid "Advanced options"
-msgstr ""
-
-#: inc/customizer/customizer.php:32
-#, php-format
-msgid "Need further informations? Check this %1$s"
-msgstr ""
-
-#: inc/customizer/customizer.php:50
+#: inc/customizer/customizer.php:27
 msgid "Header"
 msgstr ""
 
-#: inc/customizer/customizer.php:63
+#: inc/customizer/customizer.php:38
 msgid "Logo"
 msgstr ""
 
-#: inc/customizer/customizer.php:80
-msgid "Blog header title"
+#: inc/customizer/customizer.php:48
+msgid "Slider section"
 msgstr ""
 
-#: inc/customizer/customizer.php:91
-msgid "Blog header subtitle"
+#: inc/customizer/customizer.php:62
+msgid "Hide slider section?"
 msgstr ""
 
-#: inc/customizer/customizer.php:101
-msgid "Frontpage settings"
+#: inc/customizer/customizer.php:63
+msgid "If you check this box, the Slider section will disappear from homepage."
 msgstr ""
 
-#: inc/customizer/customizer.php:118
-msgid "Frontpage sections"
+#: inc/customizer/customizer.php:76
+#: inc/customizer/customizer.php:87
+#: inc/customizer/functions.php:164
+msgid "Add new slide"
 msgstr ""
 
-#: inc/customizer/customizer.php:127
-msgid "Big title section"
+#: inc/customizer/customizer.php:86
+#: inc/customizer/functions.php:158
+msgid "Slide"
 msgstr ""
 
-#: inc/customizer/customizer.php:142
-msgid "Hide big title section?"
-msgstr ""
-
-#: inc/customizer/customizer.php:143
-msgid "If you check this box, the Big title section will disappear from homepage."
-msgstr ""
-
-#: inc/customizer/customizer.php:156
-#: inc/customizer/functions.php:198
-#: inc/customizer/functions.php:262
-#: inc/customizer/functions.php:327
-msgid "Image"
-msgstr ""
-
-#: inc/customizer/customizer.php:168
-#: inc/customizer/customizer.php:372
-#: inc/customizer/customizer.php:623
-#: inc/customizer/functions.php:207
-#: inc/customizer/functions.php:208
-#: inc/customizer/functions.php:270
-#: inc/customizer/functions.php:271
-#: inc/customizer/functions.php:335
-#: inc/customizer/functions.php:336
-msgid "Title"
-msgstr ""
-
-#: inc/customizer/customizer.php:180
-#: inc/customizer/functions.php:213
-#: inc/customizer/functions.php:214
-#: inc/customizer/functions.php:275
-#: inc/customizer/functions.php:276
-#: inc/customizer/functions.php:340
-#: inc/customizer/functions.php:341
-msgid "Subtitle"
-msgstr ""
-
-#: inc/customizer/customizer.php:192
-#: inc/customizer/customizer.php:663
-msgid "Button label"
-msgstr ""
-
-#: inc/customizer/customizer.php:204
-#: inc/customizer/customizer.php:650
-msgid "Button link"
-msgstr ""
-
-#: inc/customizer/customizer.php:214
+#: inc/customizer/customizer.php:95
 msgid "Banners section"
 msgstr ""
 
-#: inc/customizer/customizer.php:229
+#: inc/customizer/customizer.php:109
 msgid "Hide banners section?"
 msgstr ""
 
-#: inc/customizer/customizer.php:230
+#: inc/customizer/customizer.php:110
 msgid "If you check this box, the Banners section will disappear from homepage."
 msgstr ""
 
-#: inc/customizer/customizer.php:243
-#: inc/customizer/customizer.php:254
+#: inc/customizer/customizer.php:123
+#: inc/customizer/customizer.php:135
 msgid "Add new banner"
 msgstr ""
 
-#: inc/customizer/customizer.php:253
+#: inc/customizer/customizer.php:134
 msgid "Banner"
 msgstr ""
 
-#: inc/customizer/customizer.php:264
-#, php-format
-msgid "To use this section, you are required to first install the  %1$s plugin"
-msgstr ""
-
-#: inc/customizer/customizer.php:264
-msgid "WooCommerce"
-msgstr ""
-
-#: inc/customizer/customizer.php:268
+#: inc/customizer/customizer.php:144
 msgid "Products section"
 msgstr ""
 
-#: inc/customizer/customizer.php:282
+#: inc/customizer/customizer.php:145
+msgid "If no shortcode or no category is selected , WooCommerce latest products are displaying."
+msgstr ""
+
+#: inc/customizer/customizer.php:157
 msgid "Hide products section?"
 msgstr ""
 
-#: inc/customizer/customizer.php:283
+#: inc/customizer/customizer.php:158
 msgid "If you check this box, the Products section will disappear from homepage."
 msgstr ""
 
-#: inc/customizer/customizer.php:296
-#: inc/customizer/customizer.php:442
+#: inc/customizer/customizer.php:171
+#: inc/customizer/customizer.php:317
 msgid "Section title"
 msgstr ""
 
-#: inc/customizer/customizer.php:307
+#: inc/customizer/customizer.php:183
 msgid "WooCommerce shortcode"
 msgstr ""
 
-#: inc/customizer/customizer.php:309
+#: inc/customizer/customizer.php:185
 msgid "Insert a WooCommerce shortcode"
 msgstr ""
 
-#: inc/customizer/customizer.php:313
+#: inc/customizer/customizer.php:189
 msgid "Select category"
 msgstr ""
 
-#: inc/customizer/customizer.php:334
-#: inc/customizer/customizer.php:469
+#: inc/customizer/customizer.php:210
+#: inc/customizer/customizer.php:344
 msgid "Products category"
 msgstr ""
 
-#: inc/customizer/customizer.php:335
-msgid "OR pick a product category. If no shortcode or no category is selected , WooCommerce latest products are displaying."
+#: inc/customizer/customizer.php:211
+msgid "OR pick a product category"
 msgstr ""
 
-#: inc/customizer/customizer.php:346
+#: inc/customizer/customizer.php:222
 msgid "Video section"
 msgstr ""
 
-#: inc/customizer/customizer.php:359
+#: inc/customizer/customizer.php:234
 msgid "Hide video section?"
 msgstr ""
 
-#: inc/customizer/customizer.php:360
+#: inc/customizer/customizer.php:235
 msgid "If you check this box, the Video section will disappear from homepage."
 msgstr ""
 
-#: inc/customizer/customizer.php:383
+#: inc/customizer/customizer.php:247
+#: inc/customizer/customizer.php:468
+#: inc/customizer/customizer.php:536
+#: inc/customizer/customizer.php:608
+#: inc/customizer/customizer.php:667
+#: inc/customizer/functions.php:208
+#: inc/customizer/functions.php:209
+#: inc/customizer/functions.php:270
+#: inc/customizer/functions.php:271
+#: inc/customizer/functions.php:334
+#: inc/customizer/functions.php:335
+msgid "Title"
+msgstr ""
+
+#: inc/customizer/customizer.php:259
 msgid "Youtube link"
 msgstr ""
 
-#: inc/customizer/customizer.php:393
+#: inc/customizer/customizer.php:269
 msgid "Products slider section"
 msgstr ""
 
-#: inc/customizer/customizer.php:409
-msgid "Hide products slider section on frontpage?"
-msgstr ""
-
-#: inc/customizer/customizer.php:410
-msgid "If you check this box, the Products slider section will disappear from homepage."
-msgstr ""
-
-#: inc/customizer/customizer.php:426
-msgid "Hide products slider section on single product page?"
-msgstr ""
-
-#: inc/customizer/customizer.php:427
-msgid "If you check this box, the Products slider section will disappear from each single product page."
-msgstr ""
-
-#: inc/customizer/customizer.php:451
-msgid "Special category of products"
-msgstr ""
-
-#: inc/customizer/customizer.php:455
-msgid "Section subtitle"
-msgstr ""
-
-#: inc/customizer/customizer.php:473
+#: inc/customizer/customizer.php:270
 msgid "If no category is selected , WooCommerce products from the first category found are displaying."
 msgstr ""
 
-#: inc/customizer/customizer.php:482
+#: inc/customizer/customizer.php:284
+msgid "Hide products slider section on frontpage?"
+msgstr ""
+
+#: inc/customizer/customizer.php:285
+msgid "If you check this box, the Products slider section will disappear from homepage."
+msgstr ""
+
+#: inc/customizer/customizer.php:301
+msgid "Hide products slider section on single product page?"
+msgstr ""
+
+#: inc/customizer/customizer.php:302
+msgid "If you check this box, the Products slider section will disappear from each single product page."
+msgstr ""
+
+#: inc/customizer/customizer.php:330
+msgid "Section subtitle"
+msgstr ""
+
+#: inc/customizer/customizer.php:356
 msgid "Footer"
 msgstr ""
 
-#: inc/customizer/customizer.php:493
+#: inc/customizer/customizer.php:363
+#: inc/structure/footer.php:82
+msgid "&copy; Themeisle, All rights reserved"
+msgstr ""
+
+#: inc/customizer/customizer.php:368
 msgid "Copyright"
 msgstr ""
 
-#: inc/customizer/customizer.php:507
-msgid "Hide site info?"
-msgstr ""
-
-#: inc/customizer/customizer.php:508
-msgid "If you check this box, the Site info will disappear from footer."
-msgstr ""
-
-#: inc/customizer/customizer.php:520
-#: inc/customizer/customizer.php:531
+#: inc/customizer/customizer.php:380
+#: inc/customizer/customizer.php:392
 msgid "Add new social"
 msgstr ""
 
-#: inc/customizer/customizer.php:530
+#: inc/customizer/customizer.php:391
 msgid "Social"
 msgstr ""
 
-#: inc/customizer/customizer.php:539
-#: inc/customizer/customizer.php:580
+#: inc/customizer/customizer.php:400
 msgid "Contact page"
 msgstr ""
 
-#: inc/customizer/customizer.php:549
+#: inc/customizer/customizer.php:411
 msgid "Contact form shortcode"
 msgstr ""
 
-#: inc/customizer/customizer.php:551
-#, php-format
-msgid "Create a form, copy the shortcode generated and paste it here. We recommend %1$s but you can use any plugin you like."
+#: inc/customizer/customizer.php:412
+msgid "Create a form, copy the shortcode generated and paste it here. We recommend <a href=\"https://wordpress.org/plugins/contact-form-7/\">Contact Form 7</a> but you can use any plugin you like."
 msgstr ""
 
-#: inc/customizer/customizer.php:552
-msgid "Contact Form 7"
-msgstr ""
-
-#: inc/customizer/customizer.php:565
+#: inc/customizer/customizer.php:425
 msgid "Map shortcode"
 msgstr ""
 
-#: inc/customizer/customizer.php:567
-#, php-format
-msgid "To use this section please install %1$s plugin then use it to create a map and paste here the shortcode generated"
+#: inc/customizer/customizer.php:426
+msgid "To use this section please install <a href=\"https://wordpress.org/plugins/intergeo-maps/\">Intergeo Maps</a> plugin then use it to create a map and paste here the shortcode generated"
 msgstr ""
 
-#: inc/customizer/customizer.php:568
-msgid "Intergeo Maps"
+#: inc/customizer/customizer.php:442
+msgid "About us page"
 msgstr ""
 
-#: inc/customizer/customizer.php:598
+#: inc/customizer/customizer.php:446
+msgid "Our team"
+msgstr ""
+
+#: inc/customizer/customizer.php:454
+msgid "About us page - our team"
+msgstr ""
+
+#: inc/customizer/customizer.php:482
+#: inc/customizer/customizer.php:550
+#: inc/customizer/functions.php:214
+#: inc/customizer/functions.php:215
+#: inc/customizer/functions.php:275
+#: inc/customizer/functions.php:276
+#: inc/customizer/functions.php:339
+#: inc/customizer/functions.php:340
+msgid "Subtitle"
+msgstr ""
+
+#: inc/customizer/customizer.php:495
+#: inc/customizer/customizer.php:507
+msgid "Add new team member"
+msgstr ""
+
+#: inc/customizer/customizer.php:506
+msgid "Team member"
+msgstr ""
+
+#: inc/customizer/customizer.php:514
+#: inc/customizer/customizer.php:577
+msgid "Video"
+msgstr ""
+
+#: inc/customizer/customizer.php:522
+msgid "About us page - video"
+msgstr ""
+
+#: inc/customizer/customizer.php:564
+msgid "Background"
+msgstr ""
+
+#: inc/customizer/customizer.php:594
+msgid "About us page - our advantages"
+msgstr ""
+
+#: inc/customizer/customizer.php:622
+#: inc/customizer/customizer.php:634
+msgid "Add new advantage"
+msgstr ""
+
+#: inc/customizer/customizer.php:633
+msgid "Advantage"
+msgstr ""
+
+#: inc/customizer/customizer.php:642
 msgid "404 Not found page"
 msgstr ""
 
-#: inc/customizer/customizer.php:610
+#: inc/customizer/customizer.php:654
 msgid "Background image"
 msgstr ""
 
-#: inc/customizer/customizer.php:637
+#: inc/customizer/customizer.php:675
+msgid "The requested URL was not found on this server.<br> That is all we know."
+msgstr ""
+
+#: inc/customizer/customizer.php:681
 msgid "Text"
 msgstr ""
 
-#: inc/customizer/customizer.php:712
+#: inc/customizer/customizer.php:694
+msgid "Button link"
+msgstr ""
+
+#: inc/customizer/customizer.php:707
+msgid "Button label"
+msgstr ""
+
+#: inc/customizer/customizer.php:717
+msgid "Advanced options"
+msgstr ""
+
+#: inc/customizer/customizer.php:769
 msgid "Disable preloader?"
 msgstr ""
 
-#: inc/customizer/customizer.php:713
+#: inc/customizer/customizer.php:770
 msgid "If this box is checked, the preloader will be disabled from homepage."
 msgstr ""
 
@@ -739,110 +480,83 @@ msgstr ""
 msgid "Documentation"
 msgstr ""
 
-#: inc/customizer/functions.php:157
-msgid "Slide"
+#: inc/customizer/functions.php:34
+msgid "Support Forum"
 msgstr ""
 
-#: inc/customizer/functions.php:163
-msgid "Add new slide"
-msgstr ""
-
-#: inc/customizer/functions.php:187
+#: inc/customizer/functions.php:188
 #: inc/customizer/functions.php:245
-#: inc/customizer/functions.php:310
+#: inc/customizer/functions.php:309
 msgid "Icon"
 msgstr ""
 
-#: inc/customizer/functions.php:201
+#: inc/customizer/functions.php:199
+#: inc/customizer/functions.php:262
+#: inc/customizer/functions.php:326
+msgid "Image"
+msgstr ""
+
+#: inc/customizer/functions.php:202
 #: inc/customizer/functions.php:265
-#: inc/customizer/functions.php:330
+#: inc/customizer/functions.php:329
 msgid "Upload Image"
 msgstr ""
 
-#: inc/customizer/functions.php:218
 #: inc/customizer/functions.php:219
+#: inc/customizer/functions.php:220
 #: inc/customizer/functions.php:280
 #: inc/customizer/functions.php:281
+#: inc/customizer/functions.php:344
 #: inc/customizer/functions.php:345
-#: inc/customizer/functions.php:346
 msgid "Description"
 msgstr ""
 
-#: inc/customizer/functions.php:223
 #: inc/customizer/functions.php:224
+#: inc/customizer/functions.php:225
 #: inc/customizer/functions.php:285
 #: inc/customizer/functions.php:286
+#: inc/customizer/functions.php:349
 #: inc/customizer/functions.php:350
-#: inc/customizer/functions.php:351
 msgid "Button Label"
 msgstr ""
 
-#: inc/customizer/functions.php:228
 #: inc/customizer/functions.php:229
+#: inc/customizer/functions.php:230
 #: inc/customizer/functions.php:290
 #: inc/customizer/functions.php:291
+#: inc/customizer/functions.php:354
 #: inc/customizer/functions.php:355
-#: inc/customizer/functions.php:356
 msgid "Button Link"
 msgstr ""
 
 #: inc/customizer/functions.php:232
-#: inc/customizer/functions.php:294
-#: inc/customizer/functions.php:360
+#: inc/customizer/functions.php:293
+#: inc/customizer/functions.php:358
 msgid "Delete field"
 msgstr ""
 
-#: inc/functions/setup.php:64
+#: inc/functions/setup.php:59
 msgid "Primary Menu"
 msgstr ""
 
-#: inc/functions/setup.php:120
+#: inc/functions/setup.php:105
 msgid "Sidebar"
 msgstr ""
 
-#: inc/functions/setup.php:129
+#: inc/functions/setup.php:114
 msgid "Footer area 1"
 msgstr ""
 
-#: inc/functions/setup.php:138
+#: inc/functions/setup.php:123
 msgid "Footer area 2"
 msgstr ""
 
-#: inc/functions/setup.php:147
+#: inc/functions/setup.php:132
 msgid "Footer area 3"
 msgstr ""
 
-#: inc/functions/setup.php:156
+#: inc/functions/setup.php:141
 msgid "Footer area 4"
-msgstr ""
-
-#: inc/functions/setup.php:165
-msgid "Sidebar Shop Page"
-msgstr ""
-
-#: inc/functions/setup.php:268
-#, php-format
-msgid "All plugins installed and activated successfully. %s"
-msgstr ""
-
-#: inc/functions/setup.php:335
-msgid "Ideas and concepts"
-msgstr ""
-
-#: inc/functions/setup.php:335
-msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-msgstr ""
-
-#: inc/functions/setup.php:335
-msgid "Designs & interfaces"
-msgstr ""
-
-#: inc/functions/setup.php:335
-msgid "Highly customizable"
-msgstr ""
-
-#: inc/functions/setup.php:335
-msgid "Easy to use"
 msgstr ""
 
 #: inc/structure/comments.php:40
@@ -858,21 +572,20 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: inc/structure/footer.php:95
-#, php-format
-msgid "%1$s powered by %2$s"
+#: inc/structure/footer.php:121
+msgid "powered by"
 msgstr ""
 
-#: inc/structure/footer.php:95
-msgid "Shop Isle"
-msgstr ""
-
-#: inc/structure/footer.php:95
-msgid "WordPress"
-msgstr ""
-
-#: inc/structure/header.php:63
+#: inc/structure/header.php:72
 msgid "Toggle navigation"
+msgstr ""
+
+#: inc/structure/header.php:104
+msgid "Skip to navigation"
+msgstr ""
+
+#: inc/structure/header.php:105
+msgid "Skip to content"
 msgstr ""
 
 #: inc/structure/page.php:18
@@ -945,5 +658,13 @@ msgstr ""
 
 #: inc/structure/template-tags.php:156
 msgid "On Sale"
+msgstr ""
+
+#: inc/woocommerce/functions.php:254
+msgid "Header description"
+msgstr ""
+
+#: inc/woocommerce/template-tags.php:18
+msgid "View your shopping cart"
 msgstr ""
 

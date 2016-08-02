@@ -213,14 +213,11 @@ jQuery(document).ready(function(){
 
 	jQuery( '#customize-theme-controls > ul' ).prepend('<li class="accordion-section shop-isle-upsells">');
 
-	jQuery( '.shop-isle-upsells' ).append('<a style="width: 80%; margin: 5px auto 5px auto; display: block; text-align: center;" href="http://docs.themeisle.com/article/421-shop-isle-documentation-wordpress-org" class="button" target="_blank">{documentation}</a>'.replace('{documentation}',objectL10n.documentation));
+	jQuery( '.shop-isle-upsells' ).append('<a style="width: 80%; margin: 5px auto 5px auto; display: block; text-align: center;" href="http://themeisle.com/contact/" class="button" target="_blank">{support}</a>'.replace('{support}',objectL10n.support));
 
+	jQuery( '.shop-isle-upsells' ).append('<a style="width: 80%; margin: 5px auto 5px auto; display: block; text-align: center;" href="http://themeisle.com/documentation-shop-isle/" class="button" target="_blank">{documentation}</a>'.replace('{documentation}',objectL10n.documentation));
 
-	jQuery('body').on('click', '.shop_isle_go_to_section', function (event) {
-		var id = jQuery(this).attr('href');
-		if( typeof(id) != 'undefined' ) {
-			jQuery("#" + id).find('h3').trigger('click');
-		}
-		event.preventDefault();
-	});
+	jQuery( '#customize-theme-controls > ul' ).prepend('</li>');
+
+	jQuery('.preview-notice').append('<a class="shop-isle-upgrade-to-pro-button" href="http://themeisle.com/themes/shop-isle-pro/" class="button" target="_blank">{pro}</a>'.replace('{pro}',objectL10n.pro));
 });
