@@ -2142,7 +2142,7 @@ Sections
 .module,
 .module-small {
 	position: relative;
-	padding: 180px 0;
+	padding: 90px 0;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	-webkit-background-size: cover;
@@ -2298,7 +2298,7 @@ Sections
 }
 
 .logo-image img {
-	max-width: initial;
+	max-width: 100%;
 }
 
 /* Restaurant module header */
@@ -4672,21 +4672,39 @@ Vertival margin, padding
 }
 /*add to cart*/
 a.reset_variations{
-	box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.4);
-	margin-left: 20px;
-	background: #fff;
-	color: #000;
+	background: rgba(17, 17, 17, 1);
+	color: #fff;
 	font-family: "Roboto Condensed", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 11px;
 	padding: 8px 17px;
-	-webkit-border-radius: 1px;
-	-moz-border-radius: 1px;
-	border-radius: 1px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
 	width: auto;
+	margin-left:10px;
 	border: none;
+/*	display: none;*/
 }
 option.attached{
 	/*font: 400 12px/1.1 "Open Sans", sans-serif;*/
 }
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.border-bottom{
+	border-bottom: 1px solid #ccc;
+}
+
+.padding-faqs{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+.module.module-video{
+	padding:180px;
+}
+
