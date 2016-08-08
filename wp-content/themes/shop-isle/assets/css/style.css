@@ -2818,6 +2818,7 @@ Video box
 	letter-spacing: 4px;
 	font-size: 30px;
 	margin: 10px 0 0;
+	text-align: center;
 }
 
 .video-subtitle {
@@ -4708,3 +4709,10 @@ option.attached{
 	padding:180px;
 }
 
+.padding-video{
+	padding:20px;
+}
+
+div.woocommerce-tabs ul.tabs li.additional_information_tab {
+	display: none!important;
+}
