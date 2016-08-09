@@ -3799,6 +3799,7 @@ Shope item
 .shop-item-image {
 	position: relative;
 	overflow: hidden;
+	box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
 }
 
 .shop-item-image img {
@@ -4020,7 +4021,7 @@ Scroll to top
 	float: none;
 	display: table-cell !important;
 	vertical-align: middle;
-	width: 230px;
+	width: 190px;
 }
 .header-container {
 	min-height: 50px;
@@ -4715,4 +4716,26 @@ option.attached{
 
 div.woocommerce-tabs ul.tabs li.additional_information_tab {
 	display: none!important;
+}
+
+.prod-img-wrap{
+	box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
+}
+
+#post-9 div.entry-content{
+	width: 50%;
+	margin: 0px auto;
+	padding: 20px;
+	border: 1px solid rgb(234, 234, 234);
+}
+
+#rememberme.woocommerce-Input--checkbox{
+	float:none;
+	margin-left:10px;
+}
+
+.page-id-9 .woocommerce-error{
+	width:50%;
+	margin:0px auto;
+	margin-bottom: 20px;
 }
